@@ -6,6 +6,7 @@ const connectdb = mysql.createConnection({
   user: serverConfig.dbUser,
   password: serverConfig.dbPass,
   database: serverConfig.dbName,
+  ssl: {},
 });
 connectdb.connect((err) => {
   if (err) {

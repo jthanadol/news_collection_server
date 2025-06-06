@@ -9,6 +9,7 @@ const pool = mysql.createPool({
   waitForConnections: true, //ให้รอคิวได้
   connectionLimit: 30, //จำนวนช่องเชื่อมต่อ
   queueLimit: 0, //จำนวนคิว 0 คือไม่จำกัด
+  ssl: {},
 });
 
 module.exports = pool.promise();
